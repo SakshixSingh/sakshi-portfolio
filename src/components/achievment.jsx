@@ -1,5 +1,6 @@
 import React from "react";
 import "./achievment.css";
+import AchievementCards from "./achievemnetcard";
 
 const Achievement = () => {
   return (
@@ -12,12 +13,11 @@ const Achievement = () => {
             📌 I'm a proud <strong>Merit Scholarship holder</strong> in Electrical & Computer Engineering,
             with a love for tech, design, and teamwork. I’ve won hackathons, mentored juniors in UI/UX,
             and contributed actively to creative projects!
+            <AchievementCards></AchievementCards>
+            
           </p>
 
-          <div className="achievement-images mt-4 d-flex justify-content-center gap-4 flex-wrap">
-            <img src="/background.png"  className="achievement-img" />
-            <img src="/background.png" className="achievement-img" />
-          </div>
+          
         </div>
       </div>
     </section>

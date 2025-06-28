@@ -1,0 +1,97 @@
+.achievement-card-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.achievement-card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #1d152a;
+  box-shadow: 8px 8px 20px #0a0610, -8px -8px 20px #382d50;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.achievement-card:hover {
+  transform: scale(1.03);
+}
+
+.cover-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  object-position: center 20%; /* 👈 shifts image slightly down (not all the way) */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+
+.description {
+  padding: 0.8rem 1rem;
+  color: #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.description p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: 0.3rem;
+  line-height: 1.3;
+  white-space: normal;     /* Allow wrapping */
+  overflow: visible;       /* Allow full text */
+  text-overflow: initial;  /* Prevent cutting */
+}
+
+
+.description h4 {
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 30, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.gallery-image {
+  width: 90px;  /* was 70px */
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

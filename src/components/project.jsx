@@ -3,25 +3,25 @@ import "./project.css";
 
 const projects = [
   {
-    title: "StudyBuddy Platform",
+    title: "SkillSwap",
     image: "/profilee.jpg",
-    description: "A peer-to-peer platform where students connect, teach, and learn together with 1:1 sessions.",
-    techStack: ["React", "Firebase", "Tailwind CSS"],
-    github: "https://github.com/yourusername/studybuddy",
+    description: "SkillSwap (WIP) – A peer-to-peer platform I'm building for students to exchange skills through 1:1 sessions, with chat and search by subject.",
+    techStack: ["React", "Firebase", "Bootstrap"],
+    github: "https://github.com/SakshixSingh/sakshi-portfoliog",
   },
   {
     title: "AeroPulse",
     image: "/profilee.jpg",
     description: "An IoT-based AQI monitoring system that visualizes and predicts air quality data across cities.",
     techStack: ["IoT", "Node.js", "MongoDB", "React"],
-    github: "https://github.com/yourusername/aeropulse",
+    github: "https://github.com/SakshixSingh/sakshi-portfolio",
   },
   {
     title: "Portfolio Website",
     image: "/profilee.jpg",
     description: "A personal portfolio showcasing my journey in UI/UX, web dev, and DSA through a fun, interactive design.",
-    techStack: ["React", "Framer Motion", "Tailwind CSS"],
-    github: "https://github.com/yourusername/portfolio",
+    techStack: ["React", "Framer Motion", "Bootstrap"],
+    github: "https://github.com/SakshixSingh/sakshi-portfolio",
   },  
 ];
 

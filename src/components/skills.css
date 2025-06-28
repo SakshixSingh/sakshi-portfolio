@@ -1,0 +1,47 @@
+.skills-section {
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 60px;
+  animation: scrollSkills 25s linear infinite;
+  padding: 20px 0;
+  width: fit-content;
+}
+
+.scroll-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  font-size: 2rem;
+  color: #5a3cc4;
+  transition: transform 0.3s ease;
+}
+
+.scroll-item:hover {
+  transform: scale(1.2);
+}
+
+.scroll-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+@keyframes scrollSkills {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

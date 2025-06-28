@@ -1,0 +1,57 @@
+.achievements-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  color: #b8c3ff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.neumorphic-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    10px 10px 25px rgba(0, 0, 0, 0.6),
+    -5px -5px 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* 🔄 Hover Tilt/Pop */
+.neumorphic-card:hover {
+  transform: rotateX(5deg) rotateY(-5deg) scale(1.02);
+  box-shadow:
+    20px 20px 40px rgba(0, 0, 0, 0.6),
+    -10px -10px 25px rgba(255, 255, 255, 0.07);
+}
+
+.achievement-text {
+  color: #f2f2f2;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.achievement-images {
+  margin-top: 30px;
+}
+
+.achievement-img {
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.achievement-img:hover {
+  transform: scale(1.07) rotateZ(1deg);
+}

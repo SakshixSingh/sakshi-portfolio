@@ -1,0 +1,37 @@
+.aurora-container {
+  width: 100%;
+  height: 100%;
+}
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  pointer-events: none;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.aurora-bg-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#060010;
+}
+

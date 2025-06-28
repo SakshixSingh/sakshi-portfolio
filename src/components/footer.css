@@ -1,0 +1,28 @@
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-bottom: 60px; /* for space under scroll-up */
+}
+
+.footer a:hover {
+  color: #c5a9ff;
+  transition: color 0.3s ease;
+}
+
+.scroll-top-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #ffffff10;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  background: #ffffff25;
+}

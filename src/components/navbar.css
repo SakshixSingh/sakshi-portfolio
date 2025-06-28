@@ -1,0 +1,45 @@
+.neumorphic-navbar {
+  background: #1c1c28;
+  border-radius: 16px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.4),
+    -5px -5px 15px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+background: rgba(28, 28, 40, 0.5);
+
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px #000;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #ccc;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffb0f5;
+  text-shadow: 0 0 5px #ffb0f5;
+}
+
+.nav-link {
+  
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #a8d0ff !important;
+  transform: scale(1.1);
+}
+

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaArrowUp , FaCode} from "react-icons/fa";
 import "./footer.css";
 
 const Footer = () => {
@@ -21,15 +21,15 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/sakshi-singh-88683024a/" className="text-white fs-4" target="_blank" rel="noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com/your-instagram" className="text-white fs-4" target="_blank" rel="noreferrer">
-            <FaInstagram />
+          <a href="https://leetcode.com/sakshiii02" className="text-white fs-4" target="_blank" rel="noreferrer">
+            <FaCode/>
           </a>
         </div>
 
         {/* Buttons */}
         <div className="mb-4">
           <a
-            href="mailto:sakshisingh@email.com"
+            href="mailto:sakshisingh020405@gmail.com"
             className="btn btn-outline-light btn-sm me-2"
           >
             Email Me

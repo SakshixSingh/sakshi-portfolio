@@ -12,6 +12,7 @@ import Projects from "./components/project";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
+import LeetCodeStats from "./components/leetcodestats";
   
 
 
@@ -57,6 +58,7 @@ function App() {
         <AboutMe/>
         <Achievements/>
         <Projects/>
+        <LeetCodeStats/>
         <Skills/>
         <Footer/>
         

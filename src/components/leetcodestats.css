@@ -1,0 +1,43 @@
+.leetcode-card-glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  color: #e2e2f7;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.leetcode-card-glass:hover {
+  transform: scale(1.02);
+}
+
+.leetcode-card-glass h2 {
+  font-size: 1.8rem;
+  color: #e8dcff;
+  margin-bottom: 0.5rem;
+}
+
+.leetcode-card-glass .quote {
+  font-style: italic;
+  color: #c3b4e9;
+  margin-bottom: 1.2rem;
+}
+
+.leetcode-card-glass .stats p {
+  font-size: 1.05rem;
+  margin: 0.4rem 0;
+}
+
+.leetcode-loading,
+.leetcode-error {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ff8c8c;
+  margin: 2rem auto;
+}

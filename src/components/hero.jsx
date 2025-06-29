@@ -39,7 +39,7 @@ export default function Hero() {
           <a href="#projects" className="btn btn-primary px-4 py-2 shadow-sm">
           View Projects
         </a>
-        <a href="/myresume.pdf"
+        <a href="/Sakshi_Singh_Resume.pdf"
             className="btn btn-outline-light btn-lg ms-5"
             target="_blank"
             rel="noreferrer">

@@ -7,7 +7,6 @@ import TextCursor from "./components/textxursor";
 
 import './App.css';
 
-import ProfileCard from "./profilecard";
 import Projects from "./components/project";
 import Skills from "./components/skills";
 import Footer from "./components/footer";

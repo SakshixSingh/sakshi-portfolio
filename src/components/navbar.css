@@ -1,5 +1,5 @@
 .neumorphic-navbar {
-  background: #1c1c28;
+  background: rgba(28, 28, 40, 0.5);
   border-radius: 16px;
   margin: 20px auto;
   max-width: 90%;
@@ -10,36 +10,74 @@
   transition: all 0.3s ease;
   z-index: 1000;
   backdrop-filter: blur(12px);
-background: rgba(28, 28, 40, 0.5);
+  padding: 0.5rem 1.5rem;
+}
 
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-text {
   color: #ffffff;
   font-size: 1.5rem;
+  font-weight: bold;
   text-shadow: 1px 1px 4px #000;
-  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-link {
-  color: #ccc;
+  color: rgba(255, 255, 255, 1) !important;/* almost pure white with high visibility */
   font-weight: 500;
-  transition: 0.2s ease;
-}
-
-.nav-link:hover {
-  color: #ffb0f5;
-  text-shadow: 0 0 5px #ffb0f5;
-}
-
-.nav-link {
-  
   transition: transform 0.3s ease, color 0.3s ease;
   position: relative;
 }
 
 .nav-link:hover {
-  color: #a8d0ff !important;
-  transform: scale(1.1);
+  color: #d1b3ff!important;
+  transform: scale(1.05);
+  text-shadow: 0 0 6px #ffb0f5;
 }
 
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(28, 28, 40, 0.9);
+    border-radius: 12px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

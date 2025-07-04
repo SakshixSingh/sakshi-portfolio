@@ -35,7 +35,7 @@ const Footer = () => {
             Email Me
           </a>
           <a
-            href="/Sakshi_Singh_Resume.pdf"
+            href="/Resume.pdf"
             className="btn btn-outline-light btn-sm"
             target="_blank"
             rel="noreferrer"

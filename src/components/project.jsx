@@ -7,14 +7,14 @@ const projects = [
     image: "/profilee.jpg",
     description: "SkillSwap (WIP) – A peer-to-peer platform I'm building for students to exchange skills through 1:1 sessions, with chat and search by subject.",
     techStack: ["React", "Firebase", "Bootstrap"],
-    github: "https://github.com/SakshixSingh/sakshi-portfoliog",
+    github: "https://github.com/SakshixSingh/",
   },
   {
     title: "AeroPulse",
     image: "/profilee.jpg",
     description: "An IoT-based AQI monitoring system that visualizes and predicts air quality data across cities.",
     techStack: ["IoT", "Node.js", "MongoDB", "React"],
-    github: "https://github.com/SakshixSingh/sakshi-portfolio",
+    github: "https://github.com/SakshixSingh/",
   },
   {
     title: "Portfolio Website",

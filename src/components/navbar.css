@@ -1,7 +1,11 @@
 .neumorphic-navbar {
+  position: fixed;
   background: rgba(28, 28, 40, 0.5);
   border-radius: 16px;
   margin: 20px auto;
+  top: 20px;        /* distance from top */
+  left: 20px;       /* distance from left */
+  right: 20px;
   max-width: 90%;
   box-shadow:
     5px 5px 15px rgba(0, 0, 0, 0.4),

@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer bg-dark text-white pt-4 position-relative">
+    <footer className="footer bg-dark text-white pt-4 position-relative " id="contacts">
       <div className="container text-center">
         <h5 className="fw-bold mb-2">Made with ☕ & Creativity — Sakshi Singh</h5>
         <p className="mb-3 fst-italic">“Designer by passion, coder by curiosity.”</p>

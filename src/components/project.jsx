@@ -3,18 +3,18 @@ import "./project.css";
 
 const projects = [
   {
-    title: "SkillSwap",
+    title: "Lock-it Drop-it",
     image: "/profilee.jpg",
-    description: "SkillSwap (WIP) – A peer-to-peer platform I'm building for students to exchange skills through 1:1 sessions, with chat and search by subject.",
+    description: "A secure digital locker web app built with Firebase, allowing users to store and manage personal items like notes and links. Features include Google Sign-In, real-time data storage, and a clean, intuitive user interface. Support for additional item types is planned.",
     techStack: ["React", "Firebase", "Bootstrap"],
-    github: "https://github.com/SakshixSingh/",
+    github: "https://github.com/SakshixSingh/lock-it-drop-it",
   },
   {
-    title: "AeroPulse",
+    title: "InboxZen",
     image: "/profilee.jpg",
-    description: "An IoT-based AQI monitoring system that visualizes and predicts air quality data across cities.",
-    techStack: ["IoT", "Node.js", "MongoDB", "React"],
-    github: "https://github.com/SakshixSingh/",
+    description: "InboxZen is a sleek AI-powered tool that simplifies messy email threads into clean summaries using OCR, GPT-based NLP, and text-to-speech — built with a dark minimal UI for distraction-free clarity.",
+    techStack: ["React", "Bootstrap", "Tesseract.js", "OpenRouter API"],
+    github: "https://github.com/SakshixSingh/InboxZen",
   },
   {
     title: "Portfolio Website",

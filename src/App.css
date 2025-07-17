@@ -16,3 +16,43 @@ canvas {
   pointer-events: none;
   background-color: #060010 !important; /* Black background for the canvas */
 }
+
+.landing-screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #110f1f;
+  color: #e0d9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s ease-in-out;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.landing-text {
+  font-size: 3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animated-name {
+  color: #b89af9;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+

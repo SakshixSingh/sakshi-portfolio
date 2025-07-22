@@ -3,7 +3,7 @@
 Hey there! I'm **Sakshi Singh** – a UI/UX designer, frontend developer, and stubborn creative.  
 This is my personal portfolio built using **React + Bootstrap** — it floats, it blinks, it trails sparkles ✨
 
-## 🚀 Tech Stack Used
+## 🚀 Tech Stack
 - React.js
 - Bootstrap 5
 - Custom CSS

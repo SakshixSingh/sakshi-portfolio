@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import sakshiImg from "../assets/imagee.jpg";
+import sakshiImg from "../assets/imagee.png";
 import ScrollFadeIn from "./scrollfadein";
 import Aurora from "./background";
 

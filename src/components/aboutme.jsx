@@ -14,7 +14,7 @@ const AboutMe = () => {
             visually appealing. My interests include <strong>UI/UX</strong>, 
             <strong> web development</strong>, and continuously improving my 
             <strong> problem-solving skills</strong> through DSA.<br /><br />
-            Outside of academics, I like doodling and working on creative ideas — 
+            Outside of academics, I like doodling and working on creative ideas  
             it helps me keep a balance between logic and creativity.<br /><br />
             — <span className="signature">Sakshi</span>
           </p>

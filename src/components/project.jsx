@@ -3,6 +3,23 @@ import "./project.css";
 
 const projects = [
   {
+  title: "IssuePulse — Civic Issue Reporting Platform",
+  image: "/profilee.jpg",
+  description:
+    "A full-stack civic engagement platform that allows citizens to report local issues with location and images, while moderators verify reports and authorities track resolution metrics. Includes role-based authentication, duplicate issue detection using geo-queries, SLA analytics, and civic health scoring.",
+  techStack: [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "Cloudinary",
+    "GeoSpatial Queries"
+  ],
+  github: "https://github.com/SakshixSingh/IssuePulse",
+}
+,
+  {
     title: "Lock-it Drop-it",
     image: "/profilee.jpg",
     description: "A secure digital locker web app built with Firebase, allowing users to store and manage personal items like notes and links. Features include Google Sign-In, real-time data storage, and a clean, intuitive user interface. Support for additional item types is planned.",
@@ -23,6 +40,26 @@ const projects = [
     techStack: ["React", "Framer Motion", "Bootstrap"],
     github: "https://github.com/SakshixSingh/sakshi-portfolio",
   },  
+  {
+  title: "Contact Management REST API",
+  image: "/profilee.jpg",
+  description:
+    "A secure backend REST API for managing user-specific contacts with authentication and authorization. Implements JWT-based login, password hashing, protected routes, and full CRUD operations using a clean MVC architecture.",
+  techStack: ["Node.js", "Express.js", "MongoDB", "JWT", "Mongoose"],
+  github: "https://github.com/SakshixSingh/Contact-API",
+},
+
+
+{
+  title: "Real-Time Tracking App",
+  image: "/profilee.jpg",
+  description:
+    "A real-time tracking application enabling live location updates and synchronization across clients. Built with WebSockets for instant bi-directional communication with a scalable backend service supporting multiple users and dynamic updates.",
+  techStack: ["Node.js", "Express.js", "Socket.IO", "MongoDB", "React"],
+  github: "https://github.com/SakshixSingh/Real-Time-Tracking-App",
+}
+
+
 ];
 
 const Projects = () => {

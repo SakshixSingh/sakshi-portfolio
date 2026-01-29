@@ -17,7 +17,23 @@ const projects = [
     "GeoSpatial Queries"
   ],
   github: "https://github.com/SakshixSingh/IssuePulse",
+},
+{
+  title: "E-commerce API",
+  image: "/profilee.jpg",
+  description:
+    "A backend REST API for an e-commerce platform supporting secure user authentication, product management, and cart functionality. Built using Node.js, Express, and MongoDB with JWT-based authentication, focusing on clean API design, scalable data models, and real-world backend practices.",
+  techStack: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "REST APIs",
+    "Mongoose"
+  ],
+  github: "https://github.com/SakshixSingh/E-Commerce-API"
 }
+
 ,
   {
     title: "Lock-it Drop-it",

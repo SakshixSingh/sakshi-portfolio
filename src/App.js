@@ -55,23 +55,23 @@ function App() {
           {/* Background */}
           <div className="aurora-bg-wrapper">
             <Aurora
-              colorStops={["#8875D7", "#9163CA", "#9481DF"]}
-              blend={0.5}
-              amplitude={1.0}
-              speed={0.5}
+              colorStops={["#142534", "#22445e", "#1c364a"]}
+              blend={0.6}
+              amplitude={0.8}
+              speed={0.3}
             />
           </div>
 
           {/* Floating particles */}
           <TextCursor
-            text=":)"
+            text="+"
             delay={0.01}
-            spacing={80}
+            spacing={60}
             followMouseDirection={true}
             randomFloat={true}
-            exitDuration={0.3}
-            removalInterval={20}
-            maxPoints={10}
+            exitDuration={0.4}
+            removalInterval={25}
+            maxPoints={6}
           />
 
           {/* Main Content */}

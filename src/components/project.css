@@ -1,83 +1,143 @@
 .projects-section {
-  padding: 3rem 2rem;
-  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: transparent;
 }
 
-.section-title {
+.software-header {
+  border-bottom: 1px solid rgba(229, 231, 232, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.software-title {
+  font-family: var(--font-sans);
   font-size: 2.2rem;
-  color: #b4a4ff;
-  margin-bottom: 2rem;
-  text-shadow: 0px 2px 5px #000;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0;
 }
 
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.project-card {
-  background: linear-gradient(145deg, #2b233c, #1e182b);
-  box-shadow: 8px 8px 20px #0a0610, -8px -8px 20px #382d50;
-  border-radius: 20px;
-  padding: 1.5rem;
-  width: 300px;
-  transition: transform 0.3s ease;
-  text-align: center;
-}
-
-.project-card:hover {
-  transform: perspective(800px) rotateX(3deg) rotateY(3deg) scale(1.03);
-}
-
-.project-image {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-}
-
-.project-title {
-  color: #ffffff;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-description {
-  color: #cfcfcf;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-}
-
-.tech-badge {
-  background-color: #4b3f67;
-  color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-}
-
-.github-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #6c4cd6;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
+.view-all-link {
+  font-family: var(--font-mono);
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  font-weight: 700;
+  color: #10b981;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.github-link:hover {
-  background-color: #7d5fff;
+.view-all-link:hover {
+  color: #34d399;
+  transform: translateX(4px);
+}
+
+.software-carousel-container {
+  height: 480px;
+  border-radius: 16px;
+  border: 1px solid rgba(229, 231, 232, 0.12);
+  background-color: var(--color-bg-secondary);
+}
+
+.software-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.software-slide-content {
+  max-width: 680px;
+  z-index: 2;
+}
+
+.slide-project-title {
+  font-family: var(--font-sans);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 800;
+  color: var(--color-accent);
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
+}
+
+.slide-project-desc {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: rgba(229, 231, 232, 0.8);
+  line-height: 1.6;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.slide-project-tech {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(20, 37, 52, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(229, 231, 232, 0.15);
+  color: var(--color-accent);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.carousel-arrow:hover {
+  background: rgba(229, 231, 232, 0.15);
+  color: #10b981;
+  border-color: #10b981;
+}
+
+.carousel-arrow.left {
+  left: 24px;
+}
+
+.carousel-arrow.right {
+  right: 24px;
+}
+
+.slide-icon-btn {
+  color: var(--color-accent);
+  font-size: 1.35rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.slide-icon-btn:hover {
+  color: #10b981;
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .software-carousel-container {
+    height: 520px;
+  }
+  .carousel-arrow.left {
+    left: 12px;
+  }
+  .carousel-arrow.right {
+    right: 12px;
+  }
 }

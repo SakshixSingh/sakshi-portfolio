@@ -6,18 +6,19 @@ const Achievement = () => {
   return (
     <section id="achievements" className="achievements-section py-5">
       <div className="container">
-        <div className="neumorphic-card p-4 text-center">
-          <h2 className="section-title mb-4">🎖 Achievements</h2>
+        {/* Editorial Section Number */}
+        <div className="section-tag">
+          <span>02 / ACHIEVEMENTS</span>
+        </div>
 
-          <p className="achievement-text">
-            📌 I'm a proud <strong>Merit Scholarship holder</strong> in Electrical & Computer Engineering,
+        <div className="editorial-achievements-container p-5 mt-5">
+          <p className="achievement-lead-text mb-4 text-center">
+            📌 I'm a proud <strong>Merit Scholarship holder</strong> in Electrical &amp; Computer Engineering,
             with a love for tech, design, and teamwork. I’ve won hackathons, mentored juniors in UI/UX,
             and contributed actively to creative projects!
-            <AchievementCards></AchievementCards>
-            
           </p>
-
           
+          <AchievementCards />
         </div>
       </div>
     </section>

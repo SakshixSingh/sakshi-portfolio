@@ -1,9 +1,8 @@
-
 body {
   margin: 0;
-  background-color: #060010; /* Deep black */
-  color: white;
-  font-family: 'poppins', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
 }
 
 canvas {
@@ -14,18 +13,34 @@ canvas {
   width: 100vw !important;
   height: 100vh !important;
   pointer-events: none;
-  background-color: #060010 !important; /* Black background for the canvas */
+  background-color: transparent !important;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-dim);
+}
+
+/* Splash Screen Landing Page */
 .landing-screen {
   height: 100vh;
   width: 100vw;
-  background-color: #110f1f;
-  color: #e0d9ff;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-display);
   transition: all 0.5s ease-in-out;
   z-index: 9999;
   position: fixed;
@@ -35,14 +50,54 @@ canvas {
 
 .landing-text {
   font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
   animation: fadeIn 1s ease-in-out;
 }
 
 .animated-name {
-  color: #b89af9;
+  color: var(--color-accent);
   margin-left: 10px;
   font-weight: bold;
-  transition: 0.5s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.animated-name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-accent-dim);
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-accent);
+}
+
+/* Global Section Title Helper */
+.section-tag {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-tag::after {
+  content: '';
+  height: 1px;
+  flex-grow: 1;
+  background-color: var(--color-accent-dim);
+  opacity: 0.5;
 }
 
 @keyframes fadeIn {
@@ -55,4 +110,3 @@ canvas {
     transform: translateY(0px);
   }
 }
-

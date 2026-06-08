@@ -45,9 +45,11 @@ const AchievementCards = () => {
           {/* Show gallery on hover */}
           {hoveredIndex === idx && (
             <div className="gallery-overlay">
-              {item.gallery.map((img, i) => (
-                <img key={i} src={img} alt="event" className="gallery-image" />
-              ))}
+              <div className="gallery-overlay-images">
+                {item.gallery.map((img, i) => (
+                  <img key={i} src={img} alt="event" className="gallery-image" />
+                ))}
+              </div>
             </div>
           )}
         </div>

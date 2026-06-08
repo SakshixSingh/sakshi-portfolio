@@ -1,28 +1,157 @@
-.footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  position: relative;
-  padding-bottom: 60px; /* for space under scroll-up */
+.editorial-footer {
+  background-color: transparent;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.footer a:hover {
-  color: #c5a9ff;
-  transition: color 0.3s ease;
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.footer-slogan {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  letter-spacing: -0.03em;
+}
+
+.footer-subtext {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+}
+
+/* Footer buttons */
+.btn-footer-primary {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 4px 4px 0px rgba(229, 231, 232, 0.2);
+}
+
+.btn-footer-primary:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-accent);
+}
+
+.btn-footer-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--color-accent-dim);
+  border-radius: 4px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 4px 4px 0px rgba(65, 98, 124, 0.2);
+}
+
+.btn-footer-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-accent-dim);
+}
+
+/* Social links */
+.footer-socials {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(229, 231, 232, 0.12);
+  color: var(--color-text-secondary);
+  font-size: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.social-icon-link:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: rgba(229, 231, 232, 0.1);
+  width: 100%;
+}
+
+.footer-copyright {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.footer-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.1em;
+}
+
+/* Scroll top button */
 .scroll-top-btn {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background: #ffffff10;
-  border: none;
-  color: white;
-  font-size: 1.2rem;
-  padding: 10px 12px;
-  border-radius: 50%;
+  bottom: 40px;
+  right: 5%;
+  background: var(--color-bg-secondary);
+  border: 1px solid rgba(229, 231, 232, 0.15);
+  color: var(--color-text-secondary);
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 3px 3px 0px var(--color-accent-dim);
 }
 
 .scroll-top-btn:hover {
-  background: #ffffff25;
+  color: var(--color-accent);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .scroll-top-btn {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 2rem auto 0;
+  }
 }

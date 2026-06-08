@@ -29,15 +29,21 @@ const skills = [
 const Skills = () => {
   return (
     <section className="skills-section py-5">
-      <h2 className="text-center fw-bold text-uppercase text-primary mb-4">Skills</h2>
-      <div className="scroll-wrapper">
-        <div className="scroll-track">
-          {[...skills, ...skills].map((skill, idx) => (
-            <div className="scroll-item" key={idx}>
-              <div className="icon">{skill.icon}</div>
-              <p className="mt-2">{skill.name}</p>
-            </div>
-          ))}
+      <div className="container">
+        {/* Editorial Section Number */}
+        <div className="section-tag">
+          <span>05 / SKILLS</span>
+        </div>
+
+        <div className="scroll-wrapper mt-5">
+          <div className="scroll-track">
+            {[...skills, ...skills].map((skill, idx) => (
+              <div className="scroll-item" key={idx}>
+                <div className="icon">{skill.icon}</div>
+                <p className="mt-2">{skill.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

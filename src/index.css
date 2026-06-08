@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap');
+
+:root {
+  --color-bg: #142534;
+  --color-bg-secondary: #22445e;
+  --color-bg-muted: #274e6c;
+  --color-accent: #e5e7e8;
+  --color-accent-dim: #41627c;
+  --color-text: #e5e7e8;
+  --color-text-secondary: #a2b5c4;
+  
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-bg);
 }
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+

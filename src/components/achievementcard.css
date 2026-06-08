@@ -17,6 +17,8 @@
   box-shadow: 6px 6px 0px var(--color-accent-dim);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .achievement-card:hover {
@@ -24,18 +26,37 @@
   box-shadow: 9px 9px 0px var(--color-accent);
 }
 
-.cover-image {
-  width: 100%;
+.pixel-art-wrapper {
   height: 55%;
-  object-fit: cover;
-  object-position: center 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(16, 30, 44, 0.4);
   border-bottom: 1px solid rgba(229, 231, 232, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.pixel-art-character {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: pixel-bob 2.5s ease-in-out infinite;
+}
+
+.achievement-card:hover .pixel-art-character {
+  animation: pixel-bob-fast 1.2s ease-in-out infinite;
 }
 
 .description {
   padding: 1.25rem;
   color: var(--color-text);
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .description h4 {
@@ -56,61 +77,20 @@
   line-height: 1.5;
 }
 
-/* Gallery Overlay Hover state */
-.gallery-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 37, 52, 0.95);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.gallery-overlay::before {
-  content: '// EVENT GALLERY';
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-secondary);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.25rem;
-}
-
-.gallery-overlay-images {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.gallery-image {
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
-  border-radius: 2px;
-  border: 1px solid rgba(229, 231, 232, 0.2);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.gallery-image:hover {
-  transform: scale(1.08);
-  border-color: var(--color-accent);
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  to {
-    opacity: 1;
+@keyframes pixel-bob {
+  0%, 100% {
     transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pixel-bob-fast {
+  0%, 100% {
+    transform: scale(1.08) translateY(0);
+  }
+  50% {
+    transform: scale(1.08) translateY(-6px);
   }
 }

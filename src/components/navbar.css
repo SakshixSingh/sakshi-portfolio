@@ -1,65 +1,65 @@
-.neumorphic-navbar {
+.floating-navbar-console {
   position: fixed;
-  background: rgba(20, 37, 52, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-radius: 4px;
-  margin: 0 auto;
-  top: 15px;
-  left: 5%;
-  right: 5%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 90%;
+  max-width: 1100px;
+  background: rgba(20, 37, 52, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(229, 231, 232, 0.12);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 12px;
+  padding: 0.5rem 1.75rem;
   z-index: 1000;
-  padding: 0.75rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.navbar-content {
+.navbar-console-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo-text {
   color: var(--color-accent);
   font-family: var(--font-mono);
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.logo-text::before {
-  content: '';
+.brand-dot {
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: var(--color-accent-dim);
   border-radius: 50%;
 }
 
-.nav-links {
+.nav-links-console {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
-.nav-link {
-  color: var(--color-text-secondary) !important;
+.nav-link-console {
+  color: rgba(229, 231, 232, 0.6) !important;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  text-transform: lowercase;
   text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: all 0.2s ease;
   position: relative;
-  padding-bottom: 2px;
+  padding: 4px 0;
 }
 
-.nav-link::after {
+.nav-link-console::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -72,58 +72,83 @@
   transition: transform 0.25s ease-out;
 }
 
-.nav-link:hover {
+.nav-link-console:hover {
   color: var(--color-accent) !important;
-  transform: translateY(-1px);
 }
 
-.nav-link:hover::after {
+.nav-link-console:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-/* Hamburger Icon */
-.hamburger {
+.navbar-right-console {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-dock-console {
+  display: flex;
+  gap: 0.6rem;
+  border-left: 1px solid rgba(229, 231, 232, 0.15);
+  padding-left: 1rem;
+}
+
+.dock-link-console {
+  color: rgba(229, 231, 232, 0.6);
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.dock-link-console:hover {
+  color: var(--color-accent);
+  background: rgba(229, 231, 232, 0.06);
+}
+
+.hamburger-console {
   display: none;
-  flex-direction: column;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 1.25rem;
   cursor: pointer;
-  gap: 5px;
+  padding: 4px;
 }
 
-.hamburger .bar {
-  height: 2px;
-  width: 22px;
-  background-color: var(--color-accent);
-  transition: all 0.3s ease;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .neumorphic-navbar {
-    padding: 0.75rem 1.25rem;
-  }
-  
-  .nav-links {
+@media (max-width: 900px) {
+  .nav-links-console {
     display: none;
     flex-direction: column;
-    background-color: rgba(20, 37, 52, 0.95);
-    border: 1px solid rgba(229, 231, 232, 0.15);
-    border-radius: 4px;
     position: absolute;
-    top: 60px;
-    right: 0px;
-    left: 0px;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background: rgba(20, 37, 52, 0.95);
+    border: 1px solid rgba(229, 231, 232, 0.12);
+    border-radius: 12px;
     padding: 1.5rem;
     gap: 1.25rem;
     align-items: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   }
 
-  .nav-links.open {
+  .nav-links-console.open {
     display: flex;
   }
 
-  .hamburger {
-    display: flex;
+  .hamburger-console {
+    display: block;
+  }
+
+  .social-dock-console {
+    border-left: none;
+    padding-left: 0;
   }
 }

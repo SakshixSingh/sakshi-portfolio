@@ -89,7 +89,7 @@ export default function Hero() {
               />
               <div className="image-caption-bar">
                 <span className="caption-label">SAKSHI SINGH</span>
-                <span className="caption-tag">ECE / DEV</span>
+                <span className="caption-tag"> AI / DEV </span>
               </div>
             </motion.div>
           </div>

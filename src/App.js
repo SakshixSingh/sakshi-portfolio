@@ -4,7 +4,6 @@ import Hero from "./components/hero";
 import AboutMe from "./components/aboutme";
 import Aurora from "./components/background";
 import Achievements from "./components/achievment";
-import TextCursor from "./components/textxursor";
 import Projects from "./components/project";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
@@ -61,18 +60,6 @@ function App() {
               speed={0.3}
             />
           </div>
-
-          {/* Floating particles */}
-          <TextCursor
-            text="+"
-            delay={0.01}
-            spacing={60}
-            followMouseDirection={true}
-            randomFloat={true}
-            exitDuration={0.4}
-            removalInterval={25}
-            maxPoints={6}
-          />
 
           {/* Main Content */}
           <div className="content-container position-relative" style={{ zIndex: 1 }}>

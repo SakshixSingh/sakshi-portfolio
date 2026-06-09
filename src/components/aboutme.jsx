@@ -18,9 +18,12 @@ const AboutMe = () => {
               where I get to explore both the hardware and software side of technology.
               <br /><br />
               I enjoy designing and building projects that are both functional and 
-              visually appealing. My interests include <strong>UI/UX</strong>, 
-              <strong> web development</strong>, and continuously improving my 
-              <strong> problem-solving skills</strong> through DSA.
+              visually appealing. I specialize in building next-gen intelligent systems, 
+              focusing on <strong>Agentic AI</strong>, <strong>RAG Applications</strong>, and orchestrating complex 
+              workflows using <strong>n8n</strong> and <strong>LangChain</strong>.
+              <br /><br />
+              My interests also include <strong>UI/UX</strong>, <strong>web development</strong>, 
+              and continuously improving my problem-solving skills through DSA.
               <br /><br />
               Outside of academics, I like doodling and working on creative ideas — 
               it helps me keep a balance between logic and creativity.

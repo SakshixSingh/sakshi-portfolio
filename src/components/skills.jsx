@@ -5,12 +5,13 @@ import {
   FaJs,
   FaReact,
   FaFigma,
-  FaBootstrap,
   FaGitAlt,
   FaNodeJs,
   FaPython,
-  FaGithub,
+  FaRobot,
+  FaBrain,
 } from "react-icons/fa";
+import { SiLangchain, SiN8N } from "react-icons/si";
 import "./skills.css";
 
 const skills = [
@@ -18,12 +19,14 @@ const skills = [
   { icon: <FaCss3Alt />, name: "CSS3" },
   { icon: <FaJs />, name: "JavaScript" },
   { icon: <FaReact />, name: "React" },
-  { icon: <FaFigma />, name: "Figma" },
-  { icon: <FaBootstrap />, name: "Bootstrap" },
-  { icon: <FaGitAlt />, name: "Git" },
-  { icon: <FaGithub />, name: "GitHub" },
   { icon: <FaNodeJs />, name: "Node.js" },
   { icon: <FaPython />, name: "Python" },
+  { icon: <SiN8N />, name: "n8n" },
+  { icon: <SiLangchain />, name: "LangChain" },
+  { icon: <FaRobot />, name: "Agentic AI" },
+  { icon: <FaBrain />, name: "RAG Applications" },
+  { icon: <FaFigma />, name: "Figma" },
+  { icon: <FaGitAlt />, name: "Git" },
 ];
 
 const Skills = () => {

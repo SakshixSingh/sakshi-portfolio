@@ -11,7 +11,7 @@ const AboutMe = () => {
         </div>
 
         <div className="d-flex justify-content-center mt-5">
-          <div className="about-card text-start p-5">
+          <div className="about-minimal-content text-start">
             <h2 className="about-title mb-4">Notebook</h2>
             <p className="about-text">
               Hi, I’m Sakshi! I’m currently studying Electrical and Computer Engineering, 
@@ -28,7 +28,7 @@ const AboutMe = () => {
               Outside of academics, I like doodling and working on creative ideas — 
               it helps me keep a balance between logic and creativity.
               <br /><br />
-              — <span className="signature">Sakshi</span>
+              <span className="signature">— sakshi</span>
             </p>
           </div>
         </div>

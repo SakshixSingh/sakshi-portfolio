@@ -3,47 +3,40 @@
   padding-bottom: 80px;
 }
 
-.about-card {
+.about-minimal-content {
   max-width: 750px;
   width: 100%;
-  border-radius: 4px;
-  background: rgba(20, 37, 52, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(229, 231, 232, 0.12);
-  box-shadow: 6px 6px 0px var(--color-accent-dim);
   color: var(--color-text);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.about-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0px var(--color-accent);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 
 .about-title {
   font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
+  font-size: 2.5rem;
+  font-weight: 850;
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
   color: var(--color-accent);
 }
 
 .about-text {
   font-family: var(--font-sans);
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 1.15rem;
+  line-height: 1.8;
   color: var(--color-text-secondary);
 }
 
 .signature {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.95rem;
+  display: block;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2.2rem;
   color: var(--color-accent);
-  letter-spacing: 0.05em;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 1.5rem;
+  opacity: 0.95;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0.02em;
 }

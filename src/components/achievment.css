@@ -4,17 +4,7 @@
 }
 
 .editorial-achievements-container {
-  background: rgba(20, 37, 52, 0.4);
-  border: 1px solid rgba(229, 231, 232, 0.1);
-  padding: 3rem;
-  border-radius: 4px;
-}
-
-.achievement-lead-text {
-  font-family: var(--font-sans);
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-  max-width: 800px;
-  margin: 0 auto;
+  background: transparent;
+  border: none;
+  padding: 0;
 }

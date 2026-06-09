@@ -14,7 +14,7 @@ const LeetCodeStats = () => {
         } else {
           // Fallback to approximate stats if status is not success
           setData({
-            totalSolved: 380,
+            totalSolved: 505,
             easySolved: 160,
             mediumSolved: 190,
             hardSolved: 30,

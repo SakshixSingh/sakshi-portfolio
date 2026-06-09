@@ -16,7 +16,7 @@ const achievementsList = [
   },
   {
     num: "03",
-    tag: "ECE SCHOLARSHIP",
+    tag: "EEC SCHOLARSHIP",
     title: "Merit Academic Award",
     description: "Recognized for outstanding academic achievement balancing electrical engineering formulas and software code.",
   },
